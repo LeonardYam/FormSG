@@ -1,0 +1,85 @@
+/* 
+Required as Chakra-UI resetCSS interferes with a WYSIWYG rich text editor 
+Styles copied from Chakra-UI and frontend/src/themes and HTML standards
+*/
+
+/* Chakra-UI Textarea */
+.rte {
+  border: 1px solid #c9cccf;
+  border-radius: 0.375rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rte:focus {
+  border-color: #4a61c0;
+  box-shadow: 0 0 0 1px #4a61c0;
+}
+
+/* ---- LIST STYLES ---- */
+/* Note: Lexical structures nested list items in separate <li> */
+
+/* Indent nested list items */
+.rte-list-item {
+  margin-inline-start: 1em;
+}
+
+/* Remove extra markers from nested list items */
+.rte-nested-list-item {
+  list-style-type: none;
+}
+
+.rte-ol {
+  list-style-position: outside;
+}
+
+.rte-nested-ol {
+  list-style-type: lower-alpha;
+  list-style-position: outside;
+}
+
+/* ---- HEADER STYLES ---- */
+.rte-h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.rte-h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.rte-h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+.rte-h4 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.rte-h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+}
+.rte-h6 {
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+/* ---- TEXT STYLES ---- */
+.rte-link {
+  color: #4a61c0;
+  text-decoration: underline;
+}
+
+.rte-link:hover {
+  cursor: pointer;
+}
+
+.rte-underline {
+  text-decoration: underline;
+}

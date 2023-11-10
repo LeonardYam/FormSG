@@ -60,6 +60,7 @@
     "@babel/runtime": "^7.20.13",
     "@faker-js/faker": "^8.0.1",
     "@joi/date": "^2.1.0",
+    "@lexical/markdown": "^0.12.2",
     "@opengovsg/formsg-sdk": "^0.10.0",
     "@opengovsg/myinfo-gov-client": "^4.1.1",
     "@opengovsg/sgid-client": "^2.0.0",

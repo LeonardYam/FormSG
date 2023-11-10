@@ -7,6 +7,7 @@ import { StatementFieldBase } from '~shared/types/field'
 import { createBaseValidationRules } from '~utils/fieldValidation'
 import FormErrorMessage from '~components/FormControl/FormErrorMessage'
 import FormLabel from '~components/FormControl/FormLabel'
+import { RichTextEditor } from '~components/RichTextEditor/RichTextEditor'
 import Textarea from '~components/Textarea'
 
 import { CreatePageDrawerContentContainer } from '../../../../common'
@@ -57,6 +58,10 @@ export const EditParagraph = ({ field }: EditParagraphProps): JSX.Element => {
           {...register('description', requiredValidationRule)}
         />
         <FormErrorMessage>{errors?.description?.message}</FormErrorMessage>
+      </FormControl>
+      <FormControl isRequired>
+        <FormLabel>Rich Text Editor</FormLabel>
+        <RichTextEditor />
       </FormControl>
       <FormFieldDrawerActions
         isLoading={isLoading}

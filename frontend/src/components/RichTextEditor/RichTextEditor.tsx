@@ -17,6 +17,7 @@ import { HeadingNode, QuoteNode } from '@lexical/rich-text'
 import { AutoLinkWithMatchersPlugin } from './AutoLinkWithMatchersPlugin'
 import { ListMaxIndentLevelPlugin } from './ListMaxIndentPlugin'
 import { RichTextEditorTheme } from './RichTextEditorTheme'
+import { ToolbarPlugin } from './ToolbarPlugin'
 
 const EditorNodes = [
   ListNode,
@@ -42,6 +43,7 @@ export const RichTextEditor = (): JSX.Element => {
 
   return (
     <LexicalComposer initialConfig={initialConfig}>
+      <ToolbarPlugin />
       <RichTextPlugin
         contentEditable={<ContentEditable className="rte" spellCheck={false} />}
         placeholder={null}

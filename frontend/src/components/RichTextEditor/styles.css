@@ -18,6 +18,13 @@ Styles copied from Chakra-UI and frontend/src/themes and HTML standards
   box-shadow: 0 0 0 1px #4a61c0;
 }
 
+/* ---- TOOLBAR STYLES ---- */
+.rte-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 /* ---- LIST STYLES ---- */
 /* Note: Lexical structures nested list items in separate <li> */
 
